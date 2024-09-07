@@ -341,7 +341,7 @@ hr {
         font-size: 8vw; /* Adjust text size for smaller devices */
         left: 57%;
         top: auto; /* Reset top alignment */
-        bottom: 20%; /* Position text at the bottom */
+        bottom:20%; /* Position text at the bottom */
         transform: translate(-50%, 0); /* Center the text horizontally */
     }
 
@@ -411,7 +411,7 @@ hr {
         font-size: 6vw; /* Adjust text size for larger mobile devices */
         left: 50%;
         top: auto; /* Reset top alignment */
-        bottom: 15%; /* Position text at the bottom */
+        bottom: 50%; /* Position text at the bottom */
         transform: translate(-50%, 0); /* Center the text horizontally */
     }
 
@@ -420,11 +420,13 @@ hr {
         right: 50%; /* Center the image horizontally */
         top: 20%; /* Position image at the top */
         transform: translate(50%, 0); /* Adjust for centering */
+        margin-bottom: 10px;
     }
 
     .content-section {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
     }
     
     /* Style for the content image */
@@ -432,24 +434,28 @@ hr {
         order: 1;
         margin-bottom: 20px;
         width: 70vw; /* Slightly smaller image for larger screens */
-        padding-right: 40px; /* Adjust padding for tablets */
+        padding-right: 150px; /* Adjust padding for tablets */
+
     }
 
     /* Style for the content text */
     .content-text {
         order: 2;
         padding-left: 50px; /* Adjust padding for larger mobile/tablet screens */
+
     }
 
     .content-section-2 {
         flex-direction: column-reverse; /* Image on top, text below */
         align-items: center;
         text-align: center; /* Center text on tablets */
+        margin-bottom: 20px;
     }
 
     .content-section-2 .content-image {
         width: 70vw; /* Adjust image width */
         margin-bottom: 20px; /* Space between image and text */
+
     }
 
     .content-section-2 .content-text {
@@ -470,5 +476,140 @@ hr {
     .content-dance img {
         width: 40vw; /* Adjust image size */
         padding-left: 100px; /* Adjust padding for tablets */
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text-center {
+        font-size: 10vw; /* Adjust text size for smaller mobile devices */
+        left: 54%; /* Centered text */
+        top: auto; /* Reset top alignment */
+        bottom:30%; /* Position text towards the bottom */
+        transform: translate(-50%, 0); /* Center text horizontally */
+    }
+
+    .image-right {
+        width: 70vw; /* Make image smaller for smaller mobile screens */
+        right: 50%; /* Center the image horizontally */
+        top: 10%; /* Position image at the top */
+        transform: translate(50%, 0); /* Adjust for centering */
+    }
+
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Style for the content image */
+    .content-image {
+        order: 1;
+        margin-bottom: 15px;
+        width: 110vw; /* Adjust image size for smaller screens */
+        padding-right: 20px; /* Reduce padding */
+    }
+
+    /* Style for the content text */
+    .content-text {
+        order: 2;
+        padding-left: 20px; /* Adjust padding for smaller mobile screens */
+    }
+
+    .content-section-2 {
+        flex-direction: column-reverse; /* Image on top, text below */
+        align-items: center;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .content-section-2 .content-image {
+        width: 100vw; /* Adjust image width */
+        margin-bottom: 15px; /* Space between image and text */
+    }
+
+    .content-section-2 .content-text {
+        width: 100%; /* Full width text */
+        padding-right: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .content-dance {
+        order: 2; /* Ensure the image comes first */
+        margin-bottom: 15px; /* Space between image and text */
+    }
+
+    .content-text-dance {
+        order: 1; /* Ensure the text comes below the image */
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .content-dance img {
+        width: 40vw; /* Adjust image size */
+        padding-left: 100px; /* Adjust padding for mobile */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .text-center {
+        font-size: 12vw; /* Adjust text size for very small screens */
+        left: 52%; /* Centered text */
+        top: auto; /* Reset top alignment */
+        bottom: 20%; /* Position text towards the bottom */
+        transform: translate(-50%, 0); /* Center text horizontally */
+    }
+
+    .image-right {
+        width: 70vw; /* Even smaller image size */
+        right: 50%; /* Center the image horizontally */
+        top: 10%; /* Position image at the top */
+        transform: translate(50%, 0); /* Adjust for centering */
+    }
+
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Style for the content image */
+    .content-image {
+        order: 1;
+        margin-bottom: 10px;
+        width: 120vw; /* Adjust image size for very small screens */
+        padding-right: 10px; /* Minimal padding */
+    }
+
+    /* Style for the content text */
+    .content-text {
+        order: 2;
+        padding-left: 10px; /* Adjust padding for very small mobile screens */
+    }
+
+    .content-section-2 {
+        flex-direction: column-reverse; /* Image on top, text below */
+        align-items: center;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .content-section-2 .content-image {
+        width: 95vw; /* Adjust image width */
+        margin-bottom: 10px; /* Space between image and text */
+    }
+
+    .content-section-2 .content-text {
+        width: 100%; /* Full width text */
+        padding-right: 10px; /* Adjust padding for very small screens */
+    }
+
+    .content-dance {
+        order: 2; /* Ensure the image comes first */
+        margin-bottom: 10px; /* Space between image and text */
+    }
+
+    .content-text-dance {
+        order: 1; /* Ensure the text comes below the image */
+        padding-left: 10px; /* Adjust padding for very small screens */
+    }
+
+    .content-dance img {
+        width: 50vw; /* Adjust image size */
+        padding-left: 90px; /* Adjust padding for mobile */
     }
 }
